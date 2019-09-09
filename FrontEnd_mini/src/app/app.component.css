@@ -1,0 +1,16 @@
+div.top-nav {
+    width: 100vw;
+    display: flex;   
+    text-align: center; 
+    margin-bottom: 10px;
+}
+
+div.top-nav a {
+    flex: 1;
+    color: black;
+    text-decoration: none;
+}
+
+div.top-nav a:hover {
+    color: gold;
+}

@@ -1,0 +1,18 @@
+div.container {
+    width: 85vw;
+}
+
+
+div.repo-item {
+    border: 1px gold solid;
+    border-radius: 5px;
+    margin: 5px;
+    padding: 5px;
+}
+
+div.repo-item img {
+    height:30px;
+    width:30px;
+    border-radius: 100%;
+}
+

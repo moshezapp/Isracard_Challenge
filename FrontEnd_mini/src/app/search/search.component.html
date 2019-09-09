@@ -1,0 +1,18 @@
+
+<div class="container">
+  <form #f="ngForm" (ngSubmit)="getReposFromGH(searchStr.value)">
+    <input type="text" name="searchStr" id="searchStr" ngModel #searchStr="ngModel" class="form-control">
+    <button type="submit" class="btn btn-primary">Search</button>
+  </form>
+
+  <div class="repo-list">
+    <div class="repo-item" *ngFor="let repo of repoList; let i = index">
+      {{ i+1 }} 
+      <img [src]="repo.owner.avatar_url">
+      <span>{{ repo.name }}</span>
+        
+      <button (click)="addToFav(repo)" class="btn btn-success" [disabled]="isFavorite(repo.id)" onclick="this.disabled='disabled'">Add To Favorites</button>
+    </div>
+  </div>
+</div>
+

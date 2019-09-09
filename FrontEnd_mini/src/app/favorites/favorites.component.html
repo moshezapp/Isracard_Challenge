@@ -1,0 +1,10 @@
+
+<div class="container">
+  <div class="repo-list">
+    <div class="repo-item" *ngFor="let repo of favList; let i = index">
+      {{ i+1 }} 
+      <img [src]="repo.owner_avatar"> 
+      {{ repo.repo_name }} 
+    </div>
+  </div>
+</div>
